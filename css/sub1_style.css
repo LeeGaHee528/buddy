@@ -227,6 +227,18 @@ body{
     width: 100%;
     display: block;
 }
+.img_wrap{
+    overflow: hidden;
+}
+.img_wrap img{
+    width: 100%;
+    display: block;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.img_wrap img:hover{
+    transform: scale(1.1);
+}
 .section3{
     background-color: #F8F8F8;
     height: 628px;
