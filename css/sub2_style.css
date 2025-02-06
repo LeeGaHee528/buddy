@@ -1,0 +1,506 @@
+@charset 'utf-8';
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    line-height: 28px;
+    color: #333;
+    font-size: 18px;
+}
+
+#wrap {
+    min-width: 1400px;
+}
+
+#header {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header_logo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.gnb {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px;
+    font-size: 20px;
+}
+
+.gnb li a {
+    display: block;
+    margin: 0 50px;
+}
+
+.gnb li a:hover {
+    color: #FF88D0;
+}
+
+.nav {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.nav li:nth-child(1)::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    background-color: #333;
+    margin: 0 10px;
+}
+
+.nav li a:hover {
+    color: #FF88D0;
+}
+
+#banner {
+    background: url(../images/sub2/adopt_donate_bn.jpg) no-repeat center;
+    height: 400px;
+}
+
+.inner_banner {
+    position: relative;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.main_bn {
+    position: absolute;
+    top: 110px;
+    left: 806px;
+    color: #fff;
+}
+
+.main_bn h1 {
+    font-weight: 700;
+    font-size: 54px;
+    padding-bottom: 30px;
+    line-height: 1.1em;
+}
+
+.main_bn p {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#container1 {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#container h1 {
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.title_decoration {
+    text-align: center;
+    padding: 130px 0 120px;
+}
+
+.section_title {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_title span {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 6%;
+    display: block;
+    padding-top: 15px;
+}
+
+.donate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.donate li {
+    width: 46%;
+}
+
+.donate li img {
+    width: 100%;
+    display: block;
+}
+
+.donate h2 {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 55px 0 20px;
+}
+
+.donate p {
+    font-size: 20px;
+}
+
+.btn {
+    display: flex;
+}
+
+.donate_btn1 a {
+    font-weight: 500;
+    font-size: 23px;
+    background-color: #3C3C3B;
+    color: #fff;
+    width: 248px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 43px;
+}
+
+.donate_btn1 a:hover {
+    background-color: #bbb;
+    color: #333;
+}
+
+.donate_btn2 a {
+    font-weight: 500;
+    font-size: 23px;
+    border: 2px solid #3C3C3B;
+    color: #3C3C3B;
+    width: 248px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 43px;
+}
+
+.donate_btn2 a:hover {
+    background-color: #bbb;
+    color: #fff;
+}
+
+.section2 {
+    border-bottom: 2px solid #333;
+}
+
+.adopt_way {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.adopt_way li {
+    width: 15%;
+}
+
+.adopt_way img {
+    width: 100%;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.adopt_way p{
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+.radius {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #bbb;
+    height: 20px;
+}
+.radius_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active {
+    color: #FF7CB1;
+}
+.active .radius{
+    background-color: #FF7CB1;
+}
+.adopt_wrap {
+    height: 20px;
+}
+
+.adopt_wrap .radius{
+    transform: translateY(10px);
+}
+.section3{
+    background: url(../images/sub2/adopt_Certificate.png) no-repeat 0 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 116px ;
+}
+.section3 h1{
+    font-size: 30px;
+}
+.section3 p{
+    line-height: 1.5em;
+    padding: 30px 0 18px;
+}
+.section3 span{
+    font-family: 300;
+    font-size: 15px;
+}
+.adopt_img_wrap{
+    width: 600px;
+    height: 500px;
+    position: relative;
+}
+.adopt_img_wrap img{
+    position: absolute;
+    top: 10%;
+    left: 41%;
+    display: block;
+}
+.adopt_text_wrap{
+    width: 570px;
+    padding-top: 130px;
+}
+.section4 {
+    background-color: #F8F8F8;
+}
+.section4_swiper_wrap{
+    margin: 0 auto;
+    width: 1320px;
+    position: relative;
+    text-align: center;
+}
+.adoptimg_wrap img{
+    cursor: pointer;
+}
+.section4_swiper_wrap .swiper {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    padding-bottom: 150px;
+}
+.section4_swiper_wrap .swiper-horizontal>.section4_swiper_wrap .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 60px);
+    top: var(--swiper-pagination-top, auto);
+}
+.section4_swiper_wrap .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #333;
+    opacity: .2;
+    margin: 0 4px;
+}
+.section4_swiper_wrap .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #FDB6E1;
+}
+.section4_swiper_wrap .swiper-button-next,
+.section4_swiper_wrap .swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 23%);
+    width: calc(var(--swiper-navigation-size) / 44* 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+.section4_swiper_wrap h2{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 26px 0 6px;
+}
+.section4_swiper_wrap p{
+    font-size: 16px;
+    font-weight: 300;
+}
+.section4_swiper_wrap img{
+    display: block;
+    width: 251px;
+    height: 301px;
+    object-fit: cover;
+}
+.cover_wrap{
+    position: relative;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 251px;
+    height: 301px;
+    color: #fff;
+    background-color: rgb(94, 91, 91, 65%);
+    opacity: 0;
+    transition: all 0.5s;
+    border-radius: 21px;
+}
+.cover_wrap .cover img{
+    width: 50px;
+    height: 50px;
+}
+.cover_wrap:hover .cover{
+    opacity: 1;
+}
+.cover_wrap:hover .cover a{
+    transform: translateY(0);
+}
+.cover a{
+    transform: translateY(200px);
+    transition: all 0.5s;
+}
+#footer {
+    background-color: #F9E8E8;
+    font-weight: 500;
+    font-size: 13px;
+}
+.inner_footer {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 43px 0 58px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left {
+    line-height: 1.5em;
+}
+
+.top_document {
+    padding: 14px 0 46px;
+}
+
+.document {
+    display: flex;
+}
+
+.document li::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #333;
+    margin: 0 6px;
+}
+
+.after li:nth-child(3):after {
+    display: none;
+}
+
+.footer_logo {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+.footer_icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_icon li a {
+    margin-left: 5px;
+}
+
+.footer_icon li:hover {
+    opacity: 0.5;
+}
+
+.safe {
+    display: flex;
+    padding-top: 32px;
+}
+
+.safe li:nth-child(8)::after {
+    display: none;
+}
+
+.safe li:hover a {
+    color: #FF88D0;
+}
