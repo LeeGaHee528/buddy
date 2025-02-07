@@ -70,6 +70,7 @@ body{
 }
 #wrap{
     min-width: 1400px;
+    overflow: hidden;
 }
 #header{
     width: 1320px;
