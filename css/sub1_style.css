@@ -70,7 +70,6 @@ body{
 }
 #wrap{
     min-width: 1400px;
-    overflow: hidden;
 }
 #header{
     width: 1320px;
@@ -192,39 +191,39 @@ body{
     text-align: center;
     padding: 115px 0 120px;
 }
-.misson_title{
+.mission_title{
     display: flex;
     flex-direction: column;
     padding: 130px 0;
 }
-.misson_title span{
+.mission_title span{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 6%;
     display: block;
     padding-top: 15px;
 }
-.misson{
+.mission{
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-.misson h3{
+.mission h3{
     font-weight: 600;
     font-size: 18px;
     letter-spacing: -5%;
     padding: 13px 0 22px;                            
 }
-.misson p{
+.mission p{
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
     letter-spacing: -0.5px;
 }
-.misson li{
+.mission li{
     width: 22%;
 }
-.misson img{
+.mission img{
     width: 100%;
     display: block;
 }
@@ -374,4 +373,8 @@ body{
 .safe li:hover a{
     color: #FF88D0;
 }
+.campaign_swiper .swiper-slide-next .bottom{bottom:0%;}
+.campaign_swiper .swiper-slide{transform:scale(0.7); transition: all 1.3s;}
+.campaign_swiper .swiper-slide-next{transform:scale(1);}
+.campaign_swiper .swiper-slide-duplicate-prev{transform:scale(0.7);}
 
